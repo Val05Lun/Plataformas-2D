@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - suelo
+  - cereza
+  - diamante
+  - peligros
+  - fin
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: fondo
+    uniqueID: 703372585
+    locked: 0
+  - name: plataformas
+    uniqueID: 1730628627
+    locked: 0
+  - name: adornos
+    uniqueID: 1975891113
+    locked: 0
+  - name: peligros
+    uniqueID: 2445212145
+    locked: 0
+  - name: premios
+    uniqueID: 3397876099
+    locked: 0
+  - name: personajes
+    uniqueID: 3331355445
+    locked: 0
