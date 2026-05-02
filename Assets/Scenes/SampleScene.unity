@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4369293}
   - component: {fileID: 4369292}
   m_Layer: 0
-  m_Name: adornos
+  m_Name: adornosn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 14104245}
   - component: {fileID: 14104244}
   m_Layer: 0
-  m_Name: fondo
+  m_Name: fondon3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42543,7 +42543,7 @@ GameObject:
   - component: {fileID: 29047724}
   - component: {fileID: 29047723}
   m_Layer: 7
-  m_Name: cereza01 (3)
+  m_Name: cereza05n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42797,7 +42797,7 @@ GameObject:
   - component: {fileID: 127482004}
   - component: {fileID: 127482003}
   m_Layer: 7
-  m_Name: cereza01 (3)
+  m_Name: cereza05n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43342,7 +43342,7 @@ GameObject:
   - component: {fileID: 226339210}
   - component: {fileID: 226339209}
   m_Layer: 7
-  m_Name: cereza01 (7)
+  m_Name: cereza08n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43887,7 +43887,7 @@ GameObject:
   - component: {fileID: 346717964}
   - component: {fileID: 346717963}
   m_Layer: 9
-  m_Name: Peligros
+  m_Name: Peligrosn4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45643,7 +45643,7 @@ GameObject:
   - component: {fileID: 350358959}
   - component: {fileID: 350358958}
   m_Layer: 10
-  m_Name: house
+  m_Name: housen2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45774,7 +45774,7 @@ GameObject:
   - component: {fileID: 354486106}
   - component: {fileID: 354486105}
   m_Layer: 7
-  m_Name: cereza01 (1)
+  m_Name: cereza02n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45916,7 +45916,7 @@ GameObject:
   - component: {fileID: 375800410}
   - component: {fileID: 375800409}
   m_Layer: 9
-  m_Name: Peligros
+  m_Name: Peligrosn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46819,7 +46819,7 @@ GameObject:
   - component: {fileID: 401773070}
   - component: {fileID: 401773069}
   m_Layer: 7
-  m_Name: cereza01 (5)
+  m_Name: cereza07n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46960,7 +46960,7 @@ GameObject:
   - component: {fileID: 413353712}
   - component: {fileID: 413353711}
   m_Layer: 10
-  m_Name: house
+  m_Name: housen5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47139,7 +47139,7 @@ GameObject:
   - component: {fileID: 454805947}
   - component: {fileID: 454805946}
   m_Layer: 7
-  m_Name: cereza01 (4)
+  m_Name: cereza06n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47281,7 +47281,7 @@ GameObject:
   - component: {fileID: 459744323}
   - component: {fileID: 459744322}
   m_Layer: 7
-  m_Name: cereza01 (6)
+  m_Name: cereza04n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47423,7 +47423,7 @@ GameObject:
   - component: {fileID: 464411182}
   - component: {fileID: 464411181}
   m_Layer: 7
-  m_Name: cereza01 (4)
+  m_Name: cereza06n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47825,7 +47825,7 @@ GameObject:
   - component: {fileID: 487095015}
   - component: {fileID: 487095014}
   m_Layer: 7
-  m_Name: cereza01 (8)
+  m_Name: cereza09n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47967,7 +47967,7 @@ GameObject:
   - component: {fileID: 488028063}
   - component: {fileID: 488028062}
   m_Layer: 7
-  m_Name: cereza01 (6)
+  m_Name: cereza04n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48441,7 +48441,7 @@ GameObject:
   - component: {fileID: 592047814}
   - component: {fileID: 592047813}
   m_Layer: 7
-  m_Name: cereza01 (2)
+  m_Name: cereza03n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48693,7 +48693,7 @@ GameObject:
   - component: {fileID: 679144915}
   - component: {fileID: 679144914}
   m_Layer: 6
-  m_Name: plataformas
+  m_Name: plataformasn5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98297,7 +98297,7 @@ GameObject:
   - component: {fileID: 711737887}
   - component: {fileID: 711737886}
   m_Layer: 0
-  m_Name: fondo
+  m_Name: fondon5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164427,7 +164427,7 @@ GameObject:
   - component: {fileID: 746500028}
   - component: {fileID: 746500027}
   m_Layer: 10
-  m_Name: house
+  m_Name: housen4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164558,7 +164558,7 @@ GameObject:
   - component: {fileID: 780248687}
   - component: {fileID: 780248686}
   m_Layer: 6
-  m_Name: plataformas
+  m_Name: plataformasn4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219615,7 +219615,7 @@ GameObject:
   - component: {fileID: 792112862}
   - component: {fileID: 792112861}
   m_Layer: 7
-  m_Name: cereza01 (2)
+  m_Name: cereza03n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220020,7 +220020,7 @@ GameObject:
   - component: {fileID: 865044940}
   - component: {fileID: 865044939}
   m_Layer: 7
-  m_Name: cereza01
+  m_Name: cereza01n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220194,7 +220194,7 @@ GameObject:
   - component: {fileID: 898039003}
   - component: {fileID: 898039005}
   m_Layer: 7
-  m_Name: cereza01 (1)
+  m_Name: cereza02n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220369,7 +220369,7 @@ GameObject:
   - component: {fileID: 947497456}
   - component: {fileID: 947497455}
   m_Layer: 7
-  m_Name: cereza01 (1)
+  m_Name: cereza02n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220511,7 +220511,7 @@ GameObject:
   - component: {fileID: 950917091}
   - component: {fileID: 950917090}
   m_Layer: 7
-  m_Name: cereza01 (1)
+  m_Name: cereza02n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220653,7 +220653,7 @@ GameObject:
   - component: {fileID: 960607390}
   - component: {fileID: 960607389}
   m_Layer: 7
-  m_Name: cereza01 (5)
+  m_Name: cereza07n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220795,7 +220795,7 @@ GameObject:
   - component: {fileID: 961701379}
   - component: {fileID: 961701378}
   m_Layer: 6
-  m_Name: plataformas
+  m_Name: plataformasn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232396,7 +232396,7 @@ GameObject:
   - component: {fileID: 984946716}
   - component: {fileID: 984946718}
   m_Layer: 6
-  m_Name: plataformas
+  m_Name: plataformasn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243572,7 +243572,7 @@ GameObject:
   - component: {fileID: 1029280750}
   - component: {fileID: 1029280749}
   m_Layer: 0
-  m_Name: fondo
+  m_Name: fondon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244095,7 +244095,7 @@ GameObject:
   - component: {fileID: 1046568578}
   - component: {fileID: 1046568577}
   m_Layer: 7
-  m_Name: cereza01 (6)
+  m_Name: cereza04n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244237,7 +244237,7 @@ GameObject:
   - component: {fileID: 1061981011}
   - component: {fileID: 1061981010}
   m_Layer: 7
-  m_Name: cereza01 (7)
+  m_Name: cereza08n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244378,7 +244378,7 @@ GameObject:
   - component: {fileID: 1098604440}
   - component: {fileID: 1098604439}
   m_Layer: 0
-  m_Name: adornos
+  m_Name: adornosn4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -256425,7 +256425,7 @@ GameObject:
   - component: {fileID: 1115004079}
   - component: {fileID: 1115004078}
   m_Layer: 6
-  m_Name: plataformas
+  m_Name: plataformasn3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282520,7 +282520,7 @@ GameObject:
   - component: {fileID: 1163063415}
   - component: {fileID: 1163063417}
   m_Layer: 9
-  m_Name: Peligros
+  m_Name: Peligrosn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282868,7 +282868,7 @@ GameObject:
   - component: {fileID: 1180370171}
   - component: {fileID: 1180370170}
   m_Layer: 0
-  m_Name: adornos
+  m_Name: adornosn5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284571,7 +284571,7 @@ GameObject:
   - component: {fileID: 1182606942}
   - component: {fileID: 1182606941}
   m_Layer: 7
-  m_Name: cereza01 (7)
+  m_Name: cereza08n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284932,7 +284932,7 @@ GameObject:
   - component: {fileID: 1226535972}
   - component: {fileID: 1226535971}
   m_Layer: 7
-  m_Name: cereza01 (3)
+  m_Name: cereza05n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285260,7 +285260,7 @@ GameObject:
   - component: {fileID: 1288949672}
   - component: {fileID: 1288949671}
   m_Layer: 7
-  m_Name: cereza01 (7)
+  m_Name: cereza08n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285490,7 +285490,7 @@ GameObject:
   - component: {fileID: 1312465535}
   - component: {fileID: 1312465537}
   m_Layer: 7
-  m_Name: cereza01 (3)
+  m_Name: cereza05n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285783,7 +285783,7 @@ GameObject:
   - component: {fileID: 1323469611}
   - component: {fileID: 1323469610}
   m_Layer: 0
-  m_Name: fondo
+  m_Name: fondon1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286176,7 +286176,7 @@ GameObject:
   - component: {fileID: 1339878095}
   - component: {fileID: 1339878094}
   m_Layer: 7
-  m_Name: cereza01
+  m_Name: cereza01n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286318,7 +286318,7 @@ GameObject:
   - component: {fileID: 1345471203}
   - component: {fileID: 1345471202}
   m_Layer: 7
-  m_Name: cereza01 (2)
+  m_Name: cereza03n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286460,7 +286460,7 @@ GameObject:
   - component: {fileID: 1373661679}
   - component: {fileID: 1373661681}
   m_Layer: 7
-  m_Name: cereza01 (5)
+  m_Name: cereza07n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286602,7 +286602,7 @@ GameObject:
   - component: {fileID: 1374670588}
   - component: {fileID: 1374670587}
   m_Layer: 7
-  m_Name: cereza01 (2)
+  m_Name: cereza03n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286744,7 +286744,7 @@ GameObject:
   - component: {fileID: 1385069676}
   - component: {fileID: 1385069675}
   m_Layer: 7
-  m_Name: cereza01 (6)
+  m_Name: cereza04n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286885,7 +286885,7 @@ GameObject:
   - component: {fileID: 1424628903}
   - component: {fileID: 1424628902}
   m_Layer: 0
-  m_Name: adornos
+  m_Name: adornosn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287836,7 +287836,7 @@ GameObject:
   - component: {fileID: 1530067157}
   - component: {fileID: 1530067156}
   m_Layer: 7
-  m_Name: cereza01
+  m_Name: cereza01n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287978,7 +287978,7 @@ GameObject:
   - component: {fileID: 1549022524}
   - component: {fileID: 1549022523}
   m_Layer: 7
-  m_Name: cereza01 (6)
+  m_Name: cereza04n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288120,7 +288120,7 @@ GameObject:
   - component: {fileID: 1567893314}
   - component: {fileID: 1567893313}
   m_Layer: 7
-  m_Name: cereza01 (1)
+  m_Name: cereza02n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288337,7 +288337,7 @@ GameObject:
   - component: {fileID: 1604836611}
   - component: {fileID: 1604836610}
   m_Layer: 9
-  m_Name: Peligros
+  m_Name: Peligrosn5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289184,7 +289184,7 @@ GameObject:
   - component: {fileID: 1611912498}
   - component: {fileID: 1611912497}
   m_Layer: 7
-  m_Name: cereza01
+  m_Name: cereza01n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289506,7 +289506,7 @@ GameObject:
   - component: {fileID: 1668219403}
   - component: {fileID: 1668219402}
   m_Layer: 7
-  m_Name: cereza01 (4)
+  m_Name: cereza06n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290013,7 +290013,7 @@ GameObject:
   - component: {fileID: 1685373573}
   - component: {fileID: 1685373572}
   m_Layer: 10
-  m_Name: house
+  m_Name: housen3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290619,7 +290619,7 @@ GameObject:
   - component: {fileID: 1715149657}
   - component: {fileID: 1715149656}
   m_Layer: 7
-  m_Name: cereza01 (5)
+  m_Name: cereza07n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290761,7 +290761,7 @@ GameObject:
   - component: {fileID: 1736134364}
   - component: {fileID: 1736134366}
   m_Layer: 7
-  m_Name: cereza01 (2)
+  m_Name: cereza03n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290903,7 +290903,7 @@ GameObject:
   - component: {fileID: 1763491528}
   - component: {fileID: 1763491527}
   m_Layer: 7
-  m_Name: cereza01 (5)
+  m_Name: cereza07n5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291044,7 +291044,7 @@ GameObject:
   - component: {fileID: 1765399129}
   - component: {fileID: 1765399128}
   m_Layer: 0
-  m_Name: adornos
+  m_Name: adornosn3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292817,7 +292817,7 @@ GameObject:
   - component: {fileID: 1794237264}
   - component: {fileID: 1794237266}
   m_Layer: 7
-  m_Name: cereza01
+  m_Name: cereza01n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292998,7 +292998,7 @@ GameObject:
   - component: {fileID: 1845977235}
   - component: {fileID: 1845977234}
   m_Layer: 9
-  m_Name: Peligros
+  m_Name: Peligrosn3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294735,7 +294735,7 @@ GameObject:
   - component: {fileID: 2010892133}
   - component: {fileID: 2010892132}
   m_Layer: 0
-  m_Name: fondo
+  m_Name: fondon4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437780,7 +437780,7 @@ GameObject:
   - component: {fileID: 2018597937}
   - component: {fileID: 2018597936}
   m_Layer: 7
-  m_Name: cereza01 (4)
+  m_Name: cereza06n4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437997,7 +437997,7 @@ GameObject:
   - component: {fileID: 2065994120}
   - component: {fileID: 2065994122}
   m_Layer: 7
-  m_Name: cereza01 (4)
+  m_Name: cereza06n1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438187,7 +438187,7 @@ GameObject:
   - component: {fileID: 2112803444}
   - component: {fileID: 2112803443}
   m_Layer: 7
-  m_Name: cereza01 (3)
+  m_Name: cereza05n2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438329,7 +438329,7 @@ GameObject:
   - component: {fileID: 2115782082}
   - component: {fileID: 2115782081}
   m_Layer: 7
-  m_Name: cereza01 (7)
+  m_Name: cereza08n3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
