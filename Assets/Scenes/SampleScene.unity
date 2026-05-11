@@ -42903,6 +42903,8 @@ GameObject:
   - component: {fileID: 126024846}
   - component: {fileID: 126024845}
   - component: {fileID: 126024844}
+  - component: {fileID: 126024847}
+  - component: {fileID: 126024848}
   m_Layer: 11
   m_Name: Slime
   m_TagString: Untagged
@@ -43045,6 +43047,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &126024847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126024842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &126024848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126024842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &127482001
 GameObject:
   m_ObjectHideFlags: 0
@@ -43393,6 +43423,8 @@ GameObject:
   - component: {fileID: 152495647}
   - component: {fileID: 152495646}
   - component: {fileID: 152495645}
+  - component: {fileID: 152495648}
+  - component: {fileID: 152495649}
   m_Layer: 11
   m_Name: Slime
   m_TagString: Untagged
@@ -43535,6 +43567,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &152495648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152495643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &152495649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152495643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &163986224
 GameObject:
   m_ObjectHideFlags: 0
@@ -43590,7 +43650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &180626546
 Transform:
   m_ObjectHideFlags: 0
@@ -44167,6 +44227,8 @@ GameObject:
   - component: {fileID: 317638540}
   - component: {fileID: 317638542}
   - component: {fileID: 317638541}
+  - component: {fileID: 317638543}
+  - component: {fileID: 317638544}
   m_Layer: 11
   m_Name: Murcielago
   m_TagString: Untagged
@@ -44257,6 +44319,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 2.46}
   m_EdgeRadius: 0
+--- !u!114 &317638543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317638539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &317638544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317638539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &318461934
 GameObject:
   m_ObjectHideFlags: 0
@@ -47489,6 +47579,7 @@ GameObject:
   - component: {fileID: 378795929}
   - component: {fileID: 378795931}
   - component: {fileID: 378795930}
+  - component: {fileID: 378795932}
   m_Layer: 11
   m_Name: Aguila02
   m_TagString: Untagged
@@ -47579,6 +47670,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &378795932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378795928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &384753567
 GameObject:
   m_ObjectHideFlags: 0
@@ -47769,6 +47874,8 @@ GameObject:
   - component: {fileID: 404241487}
   - component: {fileID: 404241489}
   - component: {fileID: 404241488}
+  - component: {fileID: 404241490}
+  - component: {fileID: 404241491}
   m_Layer: 11
   m_Name: Murcielago (1)
   m_TagString: Untagged
@@ -47859,6 +47966,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 2.46}
   m_EdgeRadius: 0
+--- !u!114 &404241490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404241486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &404241491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404241486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &407516105
 GameObject:
   m_ObjectHideFlags: 0
@@ -49008,6 +49143,8 @@ GameObject:
   - component: {fileID: 486005970}
   - component: {fileID: 486005972}
   - component: {fileID: 486005971}
+  - component: {fileID: 486005973}
+  - component: {fileID: 486005974}
   m_Layer: 11
   m_Name: Lobo
   m_TagString: Untagged
@@ -49098,6 +49235,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &486005973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486005969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 2
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &486005974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486005969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 3
 --- !u!1 &486681172
 GameObject:
   m_ObjectHideFlags: 0
@@ -50091,6 +50256,8 @@ GameObject:
   - component: {fileID: 577073218}
   - component: {fileID: 577073220}
   - component: {fileID: 577073219}
+  - component: {fileID: 577073221}
+  - component: {fileID: 577073222}
   m_Layer: 11
   m_Name: Topo
   m_TagString: Untagged
@@ -50181,6 +50348,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &577073221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577073217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &577073222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577073217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &592047811
 GameObject:
   m_ObjectHideFlags: 0
@@ -222288,6 +222483,7 @@ GameObject:
   - component: {fileID: 827447052}
   - component: {fileID: 827447054}
   - component: {fileID: 827447053}
+  - component: {fileID: 827447055}
   m_Layer: 11
   m_Name: Aguila02
   m_TagString: Untagged
@@ -222378,6 +222574,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &827447055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827447051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &851327455
 GameObject:
   m_ObjectHideFlags: 0
@@ -247049,7 +247259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1031035475
 Transform:
   m_ObjectHideFlags: 0
@@ -247223,6 +247433,7 @@ GameObject:
   - component: {fileID: 1060428577}
   - component: {fileID: 1060428579}
   - component: {fileID: 1060428578}
+  - component: {fileID: 1060428580}
   m_Layer: 11
   m_Name: Aguila01
   m_TagString: Untagged
@@ -247313,6 +247524,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1060428580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060428576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &1061981008
 GameObject:
   m_ObjectHideFlags: 0
@@ -259512,6 +259737,8 @@ GameObject:
   - component: {fileID: 1109995059}
   - component: {fileID: 1109995061}
   - component: {fileID: 1109995060}
+  - component: {fileID: 1109995062}
+  - component: {fileID: 1109995063}
   m_Layer: 11
   m_Name: Murcielago
   m_TagString: Untagged
@@ -259602,6 +259829,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 2.46}
   m_EdgeRadius: 0
+--- !u!114 &1109995062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109995058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &1109995063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109995058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &1115004076
 GameObject:
   m_ObjectHideFlags: 0
@@ -288370,13 +288625,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"listadoNiveles","value":{"$content":[0,1],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"listadoNiveles","value":{"$content":[0,1,2,3,4],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1031035474}
     - {fileID: 58574108}
+    - {fileID: 180626545}
+    - {fileID: 1211425826}
+    - {fileID: 620316365}
 --- !u!4 &1220000467
 Transform:
   m_ObjectHideFlags: 0
@@ -288663,6 +288921,8 @@ GameObject:
   - component: {fileID: 1251379531}
   - component: {fileID: 1251379530}
   - component: {fileID: 1251379529}
+  - component: {fileID: 1251379532}
+  - component: {fileID: 1251379533}
   m_Layer: 11
   m_Name: Slime
   m_TagString: Untagged
@@ -288805,6 +289065,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1251379532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251379527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &1251379533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251379527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &1262671244
 GameObject:
   m_ObjectHideFlags: 0
@@ -289807,6 +290095,8 @@ GameObject:
   - component: {fileID: 1333674110}
   - component: {fileID: 1333674112}
   - component: {fileID: 1333674111}
+  - component: {fileID: 1333674113}
+  - component: {fileID: 1333674114}
   m_Layer: 11
   m_Name: Murcielago
   m_TagString: Untagged
@@ -289897,6 +290187,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 2.46}
   m_EdgeRadius: 0
+--- !u!114 &1333674113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333674109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &1333674114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333674109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &1338216930
 GameObject:
   m_ObjectHideFlags: 0
@@ -290128,6 +290446,7 @@ GameObject:
   - component: {fileID: 1343675621}
   - component: {fileID: 1343675623}
   - component: {fileID: 1343675622}
+  - component: {fileID: 1343675624}
   m_Layer: 11
   m_Name: Aguila02
   m_TagString: Untagged
@@ -290218,6 +290537,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1343675624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343675620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &1345471200
 GameObject:
   m_ObjectHideFlags: 0
@@ -292356,6 +292689,8 @@ GameObject:
   - component: {fileID: 1573132596}
   - component: {fileID: 1573132598}
   - component: {fileID: 1573132597}
+  - component: {fileID: 1573132599}
+  - component: {fileID: 1573132600}
   m_Layer: 11
   m_Name: Lobo
   m_TagString: Untagged
@@ -292446,6 +292781,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1573132599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573132595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 2
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &1573132600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573132595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &1577838090
 GameObject:
   m_ObjectHideFlags: 0
@@ -294498,6 +294861,7 @@ GameObject:
   - component: {fileID: 1694592799}
   - component: {fileID: 1694592801}
   - component: {fileID: 1694592802}
+  - component: {fileID: 1694592803}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -294675,6 +295039,20 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
     _objectReferences: []
+--- !u!114 &1694592803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694592794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f97b277c456f1546b340001d602e328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proyectilPrefab: {fileID: 5308408880841481630, guid: 56dd74874199b9b4ea898d3bdf830921, type: 3}
+  tiempoEntreDisparos: 0.5
 --- !u!1 &1696713684
 GameObject:
   m_ObjectHideFlags: 0
@@ -299090,6 +299468,8 @@ GameObject:
   - component: {fileID: 1858914640}
   - component: {fileID: 1858914642}
   - component: {fileID: 1858914641}
+  - component: {fileID: 1858914643}
+  - component: {fileID: 1858914644}
   m_Layer: 11
   m_Name: Murcielago
   m_TagString: Untagged
@@ -299180,6 +299560,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 2.46}
   m_EdgeRadius: 0
+--- !u!114 &1858914643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858914639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &1858914644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858914639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 0}
 --- !u!1 &1875452798
 GameObject:
   m_ObjectHideFlags: 0
@@ -299191,6 +299599,7 @@ GameObject:
   - component: {fileID: 1875452799}
   - component: {fileID: 1875452800}
   - component: {fileID: 1875452801}
+  - component: {fileID: 1875452802}
   m_Layer: 11
   m_Name: Aguila01
   m_TagString: Untagged
@@ -299281,6 +299690,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.18}
   m_EdgeRadius: 0
+--- !u!114 &1875452802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875452798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &1899437509
 GameObject:
   m_ObjectHideFlags: 0
@@ -299292,6 +299715,8 @@ GameObject:
   - component: {fileID: 1899437510}
   - component: {fileID: 1899437512}
   - component: {fileID: 1899437511}
+  - component: {fileID: 1899437513}
+  - component: {fileID: 1899437514}
   m_Layer: 11
   m_Name: Dino
   m_TagString: Untagged
@@ -299383,6 +299808,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1899437513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899437509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 2
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &1899437514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899437509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &1917668932
 GameObject:
   m_ObjectHideFlags: 0
@@ -443394,6 +443847,8 @@ GameObject:
   - component: {fileID: 2112688498}
   - component: {fileID: 2112688500}
   - component: {fileID: 2112688499}
+  - component: {fileID: 2112688501}
+  - component: {fileID: 2112688502}
   m_Layer: 11
   m_Name: Mariquita
   m_TagString: Untagged
@@ -443484,6 +443939,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2112688501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112688497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &2112688502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112688497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  distanciaMovimiento: 5
 --- !u!1 &2112803441
 GameObject:
   m_ObjectHideFlags: 0
