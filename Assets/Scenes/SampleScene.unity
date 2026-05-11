@@ -43073,8 +43073,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 5
+  velocidad: 1
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0.2
 --- !u!1 &127482001
 GameObject:
   m_ObjectHideFlags: 0
@@ -43593,8 +43600,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 5
+  velocidad: 1
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0.2
 --- !u!1 &163986224
 GameObject:
   m_ObjectHideFlags: 0
@@ -43650,7 +43664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &180626546
 Transform:
   m_ObjectHideFlags: 0
@@ -44345,8 +44359,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
-  distanciaMovimiento: 5
+  modoPatrullaje: 0
+  distanciaMovimiento: 10
+  velocidad: 5
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 0
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &318461934
 GameObject:
   m_ObjectHideFlags: 0
@@ -46679,7 +46700,7 @@ GameObject:
   - component: {fileID: 375800409}
   m_Layer: 9
   m_Name: Peligrosn2
-  m_TagString: Untagged
+  m_TagString: Peligros
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47992,8 +48013,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
-  distanciaMovimiento: 5
+  modoPatrullaje: 0
+  distanciaMovimiento: 10
+  velocidad: 5
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 0
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &407516105
 GameObject:
   m_ObjectHideFlags: 0
@@ -49261,8 +49289,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 3
+  velocidad: 2
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados:
+  - Peligros
+  - Adornos
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0.5
 --- !u!1 &486681172
 GameObject:
   m_ObjectHideFlags: 0
@@ -50374,8 +50411,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 5
+  velocidad: 2
+  detectarParedes: 0
+  distanciaRayoBorde: 0.5
+  tagsIgnorados:
+  - Peligros
+  - Adornos
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &592047811
 GameObject:
   m_ObjectHideFlags: 0
@@ -259855,8 +259901,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
-  distanciaMovimiento: 5
+  modoPatrullaje: 0
+  distanciaMovimiento: 15
+  velocidad: 5
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 0
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &1115004076
 GameObject:
   m_ObjectHideFlags: 0
@@ -286178,7 +286231,7 @@ GameObject:
   - component: {fileID: 1163063417}
   m_Layer: 9
   m_Name: Peligrosn1
-  m_TagString: Untagged
+  m_TagString: Peligros
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288517,7 +288570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1211425827
 Transform:
   m_ObjectHideFlags: 0
@@ -289091,8 +289144,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 5
+  velocidad: 1
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &1262671244
 GameObject:
   m_ObjectHideFlags: 0
@@ -290213,8 +290273,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 2
   distanciaMovimiento: 5
+  velocidad: 5
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 0
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &1338216930
 GameObject:
   m_ObjectHideFlags: 0
@@ -292807,8 +292874,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 5
+  velocidad: 20
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados:
+  - Peligros
+  - Adornos
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0.3
 --- !u!1 &1577838090
 GameObject:
   m_ObjectHideFlags: 0
@@ -295986,7 +296062,7 @@ GameObject:
   - component: {fileID: 1765399128}
   m_Layer: 0
   m_Name: adornosn3
-  m_TagString: Untagged
+  m_TagString: Adornos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299583,11 +299659,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1858914639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
-  explosionPrefab: {fileID: 0}
+  modoPatrullaje: 0
+  distanciaMovimiento: 15
+  velocidad: 5
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 0
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &1875452798
 GameObject:
   m_ObjectHideFlags: 0
@@ -299834,8 +299917,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 5
+  velocidad: 3
+  detectarParedes: 0
+  distanciaRayoBorde: 0.5
+  tagsIgnorados:
+  - Peligros
+  - Adornos
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0.8
 --- !u!1 &1917668932
 GameObject:
   m_ObjectHideFlags: 0
@@ -443965,8 +444057,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  modoPatrullaje: 1
   distanciaMovimiento: 5
+  velocidad: 2
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
 --- !u!1 &2112803441
 GameObject:
   m_ObjectHideFlags: 0
