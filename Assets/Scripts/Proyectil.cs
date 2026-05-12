@@ -58,7 +58,8 @@ public class Proyectil : MonoBehaviour
                          nombreColision.Contains("opossum") || nombreColision.Contains("zarigueya") ||
                          nombreColision.Contains("bettle") || nombreColision.Contains("escarabajo") ||
                          nombreColision.Contains("dino") || nombreColision.Contains("dog") || nombreColision.Contains("perro") ||
-                         nombreColision.Contains("slime") || nombreColision.Contains("bat") || nombreColision.Contains("murcielago");
+                         nombreColision.Contains("slime") || nombreColision.Contains("bat") || nombreColision.Contains("murcielago") ||
+                         nombreColision.Contains("oso") || nombreColision.Contains("bear") || nombreColision.Contains("jefe");
 
         if (esEnemigo)
         {
@@ -87,7 +88,8 @@ public class Proyectil : MonoBehaviour
                         nombrePadre.Contains("frog") || nombrePadre.Contains("rana") || nombrePadre.Contains("opossum") || nombrePadre.Contains("zarigueya") ||
                         nombrePadre.Contains("bettle") || nombrePadre.Contains("escarabajo") || nombrePadre.Contains("dino") || 
                         nombrePadre.Contains("dog") || nombrePadre.Contains("perro") || nombrePadre.Contains("slime") || 
-                        nombrePadre.Contains("bat") || nombrePadre.Contains("murcielago"))
+                        nombrePadre.Contains("bat") || nombrePadre.Contains("murcielago") || nombrePadre.Contains("oso") || 
+                        nombrePadre.Contains("bear") || nombrePadre.Contains("jefe"))
                     {
                         Destroy(colision.transform.parent.gameObject);
                     }

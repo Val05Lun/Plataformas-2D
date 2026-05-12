@@ -31,6 +31,16 @@ public class EnemigoPatrullaje : MonoBehaviour
     [Tooltip("Ajusta este valor (ej. 0.3 o 0.5) si el enemigo se ve hundido en el piso")]
     public float ajusteAlturaSuelo = 0f;
 
+    [Header("Combate y Daño")]
+    [Tooltip("Tiempo de espera entre golpes para no matar al jugador al instante")]
+    public float tiempoEntreAtaques = 1.5f;
+    [Tooltip("Arrastra aquí el objeto 'Vidas' del nivel para restarle diamantes al golpear")]
+    public Transform contenedorDeVidas;
+    [Tooltip("Si es verdadero, el jugador rebotará al saltar sobre su cabeza")]
+    public bool puedeSerAplastado = true;
+    public float fuerzaRebote = 8f;
+
+    private float temporizadorAtaque = 0f;
     private Vector3 posicionInicial;
     private bool moviendoDerecha = true;
     private SpriteRenderer spriteRenderer;
@@ -41,10 +51,27 @@ public class EnemigoPatrullaje : MonoBehaviour
         posicionInicial = transform.position;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _collider = GetComponent<Collider2D>();
+
+        // Intentar buscar el contenedor de vidas automáticamente según el nivel actual
+        if (contenedorDeVidas == null)
+        {
+            string nombreEscena = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            // Busca en toda la escena un objeto llamado "Vidas". Si hay varios niveles, buscará el primero activo
+            GameObject vidasObj = GameObject.Find("Vidas");
+            if (vidasObj != null) 
+            {
+                contenedorDeVidas = vidasObj.transform;
+            }
+        }
     }
 
     void Update()
     {
+        if (temporizadorAtaque > 0)
+        {
+            temporizadorAtaque -= Time.deltaTime;
+        }
+
         // Si está activada la detección, evitamos que flote y lo adaptamos al terreno
         // No aplicamos gravedad si el modo es PorTecho, para que no caigan los murciélagos
         if (detectarSuelo && modoPatrullaje != ModoPatrullaje.PorTecho)
@@ -96,7 +123,9 @@ public class EnemigoPatrullaje : MonoBehaviour
         foreach (var hit in hits)
         {
             if (hit.collider.isTrigger) continue; // Ignora siempre los triggers
-            if (hit.collider.CompareTag("Player") || hit.collider.CompareTag("Proyectil") || hit.collider.CompareTag("Enemy")) continue;
+            
+            string nombreHit = hit.collider.gameObject.name.ToLower();
+            if (nombreHit.Contains("player") || nombreHit.Contains("proyectil") || nombreHit.Contains("cherry") || nombreHit.Contains("enemy")) continue;
             
             // Verificar si tiene un tag que queremos ignorar
             bool ignorarEsteObjeto = false;
@@ -220,12 +249,113 @@ public class EnemigoPatrullaje : MonoBehaviour
     // Respaldo de colisiones físicas
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        ProcesarDañoYCombate(collision.collider, true);
         ProcesarColisionFisica(collision);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        ProcesarDañoYCombate(collision.collider, false);
         ProcesarColisionFisica(collision);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        ProcesarDañoYCombate(collider, true);
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        ProcesarDañoYCombate(collider, false);
+    }
+
+    private void ProcesarDañoYCombate(Collider2D colJugador, bool esEnter)
+    {
+        // En lugar de buscar por nombre (que puede fallar si cambiaste el nombre), buscamos por el script del jugador
+        PlayerShooting scriptJugador = colJugador.gameObject.GetComponent<PlayerShooting>();
+        
+        if (scriptJugador != null)
+        {
+            bool fueAplastado = false;
+            Rigidbody2D rbJugador = colJugador.gameObject.GetComponent<Rigidbody2D>();
+
+            // Para que sea un salto en la cabeza (aplastamiento), el jugador DEBE estar cayendo Y estar más arriba que el enemigo
+            if (puedeSerAplastado && rbJugador != null)
+            {
+                if (rbJugador.velocity.y < 0f && colJugador.bounds.center.y > _collider.bounds.center.y)
+                {
+                    fueAplastado = true;
+                }
+            }
+
+            if (fueAplastado && esEnter)
+            {
+                Debug.Log("¡El jugador aplastó al enemigo " + gameObject.name + "!");
+                
+                // Hacer rebotar al jugador
+                if (rbJugador != null)
+                {
+                    rbJugador.velocity = new Vector2(rbJugador.velocity.x, fuerzaRebote);
+                }
+
+                // Autodestruir a este enemigo
+                EnemyHealth miSalud = GetComponent<EnemyHealth>();
+                if (miSalud != null)
+                {
+                    miSalud.RecibirDano(999, transform.position);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (!fueAplastado)
+            {
+                // Si no fue aplastamiento, el enemigo le hace daño al jugador
+                if (temporizadorAtaque <= 0f)
+                {
+                    AtacarAlJugador(colJugador.gameObject, rbJugador);
+                }
+            }
+        }
+    }
+
+    private void AtacarAlJugador(GameObject jugador, Rigidbody2D rbJugador)
+    {
+        Debug.Log("¡El enemigo " + gameObject.name + " ha tocado/golpeado al jugador!");
+
+        // Empujar al jugador hacia atrás (Knockback) para que se sienta el golpe
+        if (rbJugador != null)
+        {
+            float direccionEmpuje = jugador.transform.position.x > transform.position.x ? 1f : -1f;
+            rbJugador.velocity = new Vector2(direccionEmpuje * 5f, 5f);
+        }
+
+        if (contenedorDeVidas != null)
+        {
+            int diamantesRestantes = contenedorDeVidas.childCount;
+            if (diamantesRestantes > 0)
+            {
+                Destroy(contenedorDeVidas.GetChild(diamantesRestantes - 1).gameObject);
+                Debug.Log("¡Se perdió un diamante! Quedan: " + (diamantesRestantes - 1));
+
+                if (diamantesRestantes == 1)
+                {
+                    Debug.Log("¡Cero vidas! Reiniciando el nivel...");
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+                }
+            }
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            }
+        }
+        else
+        {
+             Debug.LogWarning("¡El enemigo me golpeó pero no encontró la carpeta Vidas para restarme diamantes!");
+        }
+        
+        temporizadorAtaque = tiempoEntreAtaques;
     }
 
     private void ProcesarColisionFisica(Collision2D collision)
@@ -237,16 +367,23 @@ public class EnemigoPatrullaje : MonoBehaviour
         {
             foreach (string tag in tagsIgnorados)
             {
-                if (!string.IsNullOrEmpty(tag) && collision.collider.CompareTag(tag))
+                if (!string.IsNullOrEmpty(tag))
                 {
-                    Physics2D.IgnoreCollision(_collider, collision.collider, true);
-                    return; // Si es ignorado, no lo procesamos como pared
+                    string tagLower = tag.ToLower();
+                    if (collision.collider.gameObject.name.ToLower().Contains(tagLower) || collision.collider.gameObject.tag.ToLower() == tagLower)
+                    {
+                        Physics2D.IgnoreCollision(_collider, collision.collider, true);
+                        return; // Si es ignorado, no lo procesamos como pared
+                    }
                 }
             }
         }
 
         // 2. Si es una pared real y falló el Raycast, nos damos vuelta físicamente
-        if (detectarParedes && !collision.collider.CompareTag("Player") && !collision.collider.CompareTag("Proyectil") && !collision.collider.CompareTag("Enemy"))
+        string nombreFisico = collision.collider.gameObject.name.ToLower();
+        bool esSujetoIgnorado = nombreFisico.Contains("player") || nombreFisico.Contains("proyectil") || nombreFisico.Contains("cherry") || nombreFisico.Contains("enemy");
+        
+        if (detectarParedes && !esSujetoIgnorado)
         {
             foreach (ContactPoint2D contacto in collision.contacts)
             {
