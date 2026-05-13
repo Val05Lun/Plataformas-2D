@@ -43143,7 +43143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &58574109
 Transform:
   m_ObjectHideFlags: 0
@@ -43358,6 +43358,8 @@ GameObject:
   - component: {fileID: 78113577}
   - component: {fileID: 78113579}
   - component: {fileID: 78113578}
+  - component: {fileID: 78113581}
+  - component: {fileID: 78113580}
   m_Layer: 0
   m_Name: Cerdo
   m_TagString: Untagged
@@ -43448,6 +43450,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &78113580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78113576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
+--- !u!114 &78113581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78113576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modoPatrullaje: 1
+  distanciaMovimiento: 3
+  velocidad: 8
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
+  tiempoEntreAtaques: 1.5
+  contenedorDeVidas: {fileID: 0}
+  puedeSerAplastado: 1
+  fuerzaRebote: 8
 --- !u!1 &83825419
 GameObject:
   m_ObjectHideFlags: 0
@@ -43748,6 +43789,8 @@ GameObject:
   - component: {fileID: 102810789}
   - component: {fileID: 102810791}
   - component: {fileID: 102810790}
+  - component: {fileID: 102810793}
+  - component: {fileID: 102810792}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -43838,6 +43881,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &102810792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102810788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modoPatrullaje: 1
+  distanciaMovimiento: 3
+  velocidad: 2
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
+  tiempoEntreAtaques: 1.5
+  contenedorDeVidas: {fileID: 0}
+  puedeSerAplastado: 1
+  fuerzaRebote: 8
+--- !u!114 &102810793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102810788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &107849892
 GameObject:
   m_ObjectHideFlags: 0
@@ -44327,6 +44409,8 @@ GameObject:
   - component: {fileID: 135552874}
   - component: {fileID: 135552876}
   - component: {fileID: 135552875}
+  - component: {fileID: 135552878}
+  - component: {fileID: 135552877}
   m_Layer: 11
   m_Name: Vam
   m_TagString: Untagged
@@ -44417,6 +44501,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.59, y: 2.52}
   m_EdgeRadius: 0
+--- !u!114 &135552877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135552873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modoPatrullaje: 1
+  distanciaMovimiento: 3
+  velocidad: 8
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
+  tiempoEntreAtaques: 1.5
+  contenedorDeVidas: {fileID: 0}
+  puedeSerAplastado: 1
+  fuerzaRebote: 8
+--- !u!114 &135552878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135552873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &143765291
 GameObject:
   m_ObjectHideFlags: 0
@@ -44874,7 +44997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &180626546
 Transform:
   m_ObjectHideFlags: 0
@@ -49741,6 +49864,8 @@ GameObject:
   - component: {fileID: 390374070}
   - component: {fileID: 390374072}
   - component: {fileID: 390374071}
+  - component: {fileID: 390374074}
+  - component: {fileID: 390374073}
   m_Layer: 0
   m_Name: Vam2
   m_TagString: Untagged
@@ -49831,6 +49956,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &390374073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390374069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modoPatrullaje: 1
+  distanciaMovimiento: 3
+  velocidad: 8
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
+  tiempoEntreAtaques: 1.5
+  contenedorDeVidas: {fileID: 0}
+  puedeSerAplastado: 1
+  fuerzaRebote: 8
+--- !u!114 &390374074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390374069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &397471789
 GameObject:
   m_ObjectHideFlags: 0
@@ -51669,8 +51833,8 @@ Transform:
   m_GameObject: {fileID: 484910696}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 158.43, y: 8.98, z: 0}
-  m_LocalScale: {x: 6, y: 10, z: 1}
+  m_LocalPosition: {x: 158.4, y: 7.11, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 700824333}
@@ -51733,9 +51897,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4447e61fb9e22b74ba3901329ee3fa1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMoviemento: 5
+  velocidadMoviemento: 2
   "rangoDeVisi\xF3n": 15
   tiempoEntreAtaques: 5
+  fuerzaEmpujeAlJugador: 7
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: -0.5
+  vidasJefe: 20
+  explosionPrefab: {fileID: 0}
   contenedorDeVidas: {fileID: 0}
   onAtacarJugador:
     m_PersistentCalls:
@@ -51764,7 +51934,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -170206,6 +170376,8 @@ GameObject:
   - component: {fileID: 749225296}
   - component: {fileID: 749225298}
   - component: {fileID: 749225297}
+  - component: {fileID: 749225300}
+  - component: {fileID: 749225299}
   m_Layer: 11
   m_Name: Conejo
   m_TagString: Untagged
@@ -170296,6 +170468,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &749225299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749225295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modoPatrullaje: 1
+  distanciaMovimiento: 3
+  velocidad: 2
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
+  tiempoEntreAtaques: 1.5
+  contenedorDeVidas: {fileID: 0}
+  puedeSerAplastado: 1
+  fuerzaRebote: 8
+--- !u!114 &749225300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749225295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &749639647
 GameObject:
   m_ObjectHideFlags: 0
@@ -251946,7 +252157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1031035475
 Transform:
   m_ObjectHideFlags: 0
@@ -291439,6 +291650,8 @@ GameObject:
   - component: {fileID: 1163002158}
   - component: {fileID: 1163002160}
   - component: {fileID: 1163002159}
+  - component: {fileID: 1163002162}
+  - component: {fileID: 1163002161}
   m_Layer: 11
   m_Name: Dino1
   m_TagString: Untagged
@@ -291529,6 +291742,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1163002161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163002157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modoPatrullaje: 1
+  distanciaMovimiento: 3
+  velocidad: 8
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
+  tiempoEntreAtaques: 1.5
+  contenedorDeVidas: {fileID: 0}
+  puedeSerAplastado: 1
+  fuerzaRebote: 8
+--- !u!114 &1163002162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163002157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &1163063413
 GameObject:
   m_ObjectHideFlags: 0
@@ -294378,7 +294630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1211425827
 Transform:
   m_ObjectHideFlags: 0
@@ -299562,6 +299814,8 @@ GameObject:
   - component: {fileID: 1461256480}
   - component: {fileID: 1461256482}
   - component: {fileID: 1461256481}
+  - component: {fileID: 1461256484}
+  - component: {fileID: 1461256483}
   m_Layer: 0
   m_Name: Pajaro
   m_TagString: Untagged
@@ -299652,6 +299906,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1461256483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461256479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7b69c1102b80143901eb36f7e442ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modoPatrullaje: 1
+  distanciaMovimiento: 3
+  velocidad: 8
+  detectarParedes: 1
+  distanciaRayoBorde: 0.5
+  tagsIgnorados: []
+  detectarSuelo: 1
+  fuerzaGravedad: 9.8
+  ajusteAlturaSuelo: 0
+  tiempoEntreAtaques: 1.5
+  contenedorDeVidas: {fileID: 0}
+  puedeSerAplastado: 1
+  fuerzaRebote: 8
+--- !u!114 &1461256484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461256479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dfef581422c341b1970a0a9ce9b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  explosionPrefab: {fileID: 278082613610075958, guid: 3bd906228d120a142b6417e7dfbfe7ae, type: 3}
 --- !u!1 &1499272409
 GameObject:
   m_ObjectHideFlags: 0
@@ -453226,7 +453519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modoPatrullaje: 1
   distanciaMovimiento: 5
-  velocidad: 2
+  velocidad: 7
   detectarParedes: 1
   distanciaRayoBorde: 0.5
   tagsIgnorados: []

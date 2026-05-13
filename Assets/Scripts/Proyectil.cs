@@ -66,16 +66,26 @@ public class Proyectil : MonoBehaviour
             haChocado = true;
             Debug.Log("¡Cereza impactó al enemigo: " + colision.name + "!");
             
-            // Buscar si el enemigo tiene el sistema de salud (en él o en su padre)
+            // Buscar si es el Jefe Oso o si tiene el sistema de salud estándar
+            JefeOso jefeOso = colision.GetComponent<JefeOso>();
             EnemyHealth saludEnemigo = colision.GetComponent<EnemyHealth>();
+            
+            if (jefeOso == null && colision.transform.parent != null)
+            {
+                jefeOso = colision.transform.parent.GetComponent<JefeOso>();
+            }
+            
             if (saludEnemigo == null && colision.transform.parent != null)
             {
                 saludEnemigo = colision.transform.parent.GetComponent<EnemyHealth>();
             }
 
-            if (saludEnemigo != null)
+            if (jefeOso != null)
             {
-                // Pasamos la posición exacta del impacto
+                jefeOso.RecibirDanoJefe(1, transform.position);
+            }
+            else if (saludEnemigo != null)
+            {
                 saludEnemigo.RecibirDano(1, transform.position);
             }
             else
@@ -88,8 +98,7 @@ public class Proyectil : MonoBehaviour
                         nombrePadre.Contains("frog") || nombrePadre.Contains("rana") || nombrePadre.Contains("opossum") || nombrePadre.Contains("zarigueya") ||
                         nombrePadre.Contains("bettle") || nombrePadre.Contains("escarabajo") || nombrePadre.Contains("dino") || 
                         nombrePadre.Contains("dog") || nombrePadre.Contains("perro") || nombrePadre.Contains("slime") || 
-                        nombrePadre.Contains("bat") || nombrePadre.Contains("murcielago") || nombrePadre.Contains("oso") || 
-                        nombrePadre.Contains("bear") || nombrePadre.Contains("jefe"))
+                        nombrePadre.Contains("bat") || nombrePadre.Contains("murcielago"))
                     {
                         Destroy(colision.transform.parent.gameObject);
                     }
